@@ -8,9 +8,6 @@ int main(){
             printf("%d\n" ,b);
             a = a/b;
         }
-        else{
-            b = b+1;
-        }
     }
     return 0;
 }# zerojudge
