@@ -3,7 +3,7 @@ int main(){
     int a ,b ,c ,d;
     scanf("%d" ,&a);
     b = 0;
-    c = 0;
+    c = 22;
     d = 0; 
     while(a > 1){
         if(a % b == 0){
