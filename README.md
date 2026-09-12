@@ -1,27 +1,30 @@
 #include <stdio.h>
 int main(){
-    int a ,b ,c ,d;
-    scanf("%d" ,&a);
-    b = 2;
-    c = 0;
-    d = 0; 
-    while(a > 1){
-        if(a % b == 0){
-            a = a/b;
-            c = c+1;
-            if (a%b != 0){
-                printf("%d%c%d ",b ,'^' ,c);
-                c = 0;
-            }
-            if (d > 0){
-                printf("%c " ,'*');
-                d = 0;
-            }
-        }
-        else{
-            b = b+1;
-            d +=1;
-        }
-    }
-    return 0;
+   int number ,a ,power;
+   a = 2;  // 除數
+   power = 0; // 指數
+   scanf("%d" ,&number);
+   while (number > 1 ){
+      if (number % a != 0){
+         a += 1;
+         power = 0;
+      }
+      if (number % a == 0){
+         number = number / a;
+         power += 1;
+      }
+      if (power > 1 & number % a != 0){
+         printf("%d^%d" ,a ,power);
+         if (number > 1){
+            printf(" * ");
+         }
+      }
+      if (power == 1 & number % a != 0){
+         printf("%d" ,a);
+         if (number > 1){
+            printf(" * ");
+         }
+      }
+   }
+   return 0;
 }
