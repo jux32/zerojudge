@@ -8,13 +8,15 @@ int main(){
     while (i <= 5){//執行6次
         printf ("i = %d\n" ,i);
         if (x <= 1){
-            printf( "x = %d\n" , x);
-            printf( "y = %d\n" , y);
+            b[x][y] = a[y][x];
+            printf("b矩陣[%d][%d]%d\n" ,x ,y, b[x][y]);
+            printf("a矩陣[%d][%d]%d\n" ,y ,x, a[y][x]);
             x += 1;
         }
         else if (x == 2 & y <= 3){
-            printf( "y = %d\n" , y);
-            printf( "x = %d\n" , x);
+            b[x][y] = a[y][x];
+            printf("b矩陣[%d][%d]%d\n" ,x ,y, b[x][y]);
+            printf("a矩陣[%d][%d]%d\n" ,y ,x, a[y][x]);
             y += 1;
         }
         else{
