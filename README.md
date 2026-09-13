@@ -5,25 +5,16 @@ int main(){
     x = 0;
     y = 0;
     i = 0;
-    while (i <= 5){//執行6次
-        printf ("i = %d\n" ,i);
-        if (x <= 1){
+    while (x <= 1){
+        while (y <= 2){
             b[x][y] = a[y][x];
-            printf("b矩陣[%d][%d]%d\n" ,x ,y, b[x][y]);
-            printf("a矩陣[%d][%d]%d\n" ,y ,x, a[y][x]);
-            x += 1;
-        }
-        else if (x == 2 & y <= 3){
-            b[x][y] = a[y][x];
-            printf("b矩陣[%d][%d]%d\n" ,x ,y, b[x][y]);
-            printf("a矩陣[%d][%d]%d\n" ,y ,x, a[y][x]);
+            printf("b[%d][%d]%d " , x, y,b[x][y]);
             y += 1;
         }
-        else{
-
-        }
-        i += 1;
-
+        printf ("\n");
+        x += 1;
+        y = 0;
     }
+
     return 0;
 }
